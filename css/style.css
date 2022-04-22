@@ -1,0 +1,148 @@
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  color: var(--Almost-Black);
+     font-size: 18px;
+     font-family: 'Epilogue', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+p {
+  color: var(--Medium-Gray);
+  font-weight: 500;
+}
+li {
+  list-style: none;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.btn {
+  padding: 8px 15px;
+  color: var(--Almost-White);
+  border: 3px solid var(--Almost-Black);
+  border-radius: 12px;
+  background: var(--Almost-Black);
+  transition: 0.3s ease-in;
+}
+.btn:hover {
+  padding: 8px 15px;
+  color: var(--Almost-Black);
+  border: 3px solid var(--Almost-Black);
+  border-radius: 12px;
+  background: transparent;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    margin: 1rem 0px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav .logo {
+    margin: 0px 20px 0px;
+  }
+  .nav .nav-menu {
+    display: none;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 6rem 20px;
+    width: 60%;
+    height: 100vh;
+    background: var(--Almost-White);
+    transition: 0.5s ease-in-out;
+  }
+  .nav .nav-menu.show {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .nav .menu {
+    display: block;
+  }
+  .nav .menu li {
+    margin: 0px 0px 10px;
+  }
+  .nav .access {
+    display: none;
+  }
+  .nav .icons {
+    z-index: 100;
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+  }
+  .nav .icons img {
+    width: auto;
+    height: 20px;
+  }
+  .nav .icons .open.dn {
+    display: none;
+  }
+  .nav .icons .close {
+    display: none;
+  }
+  .nav .icons .close.show {
+    display: block;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .hero .content {
+    width: 90%;
+    text-align: center;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .hero .content p {
+    width: 80%;
+    text-align: center;
+    word-break: break-all;
+  }
+  .hero .images {
+    width: 100%;
+    height: auto;
+  }
+  .hero .images .mobile {
+    width: 100%;
+    height: auto;
+  }
+  .hero .images .desktop {
+    display: none;
+  }
+  .hero .content .logos {
+    margin: 2rem 0px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
